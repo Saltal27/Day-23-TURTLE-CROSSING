@@ -18,7 +18,7 @@ def generate_color():
 class Cars:
 
     def __init__(self):
-        self.total_cars_num = 30
+        self.total_cars_num = 20
         self.cars_list = []
         self.active_cars_list = []
 

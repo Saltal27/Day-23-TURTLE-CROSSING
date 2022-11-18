@@ -31,8 +31,8 @@ while game_is_on:
     for car in cars.active_cars_list:
         if car.xcor() > - 320:
             car.forward(random.randint(10, 20))
-            if car.distance(puck) <= 30 and car.ycor() - 10 <= puck.xcor() <= car.ycor() + 10\
-                    or car.distance(puck) <= 20:
+            if car.distance(puck) < 30 and car.ycor() - 10 < puck.xcor() < car.ycor() + 10\
+                    or car.distance(puck) < 20:
                 game_is_on = False
                 scoreboard.game_over()
         else:
