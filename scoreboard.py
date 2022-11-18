@@ -10,7 +10,7 @@ class Scoreboard(Turtle):
         self.penup()
         self.color("black")
         self.goto(x=-280, y=260)
-        self.level = 0
+        self.level = 1
         self.refresh_scoreboard()
 
     def refresh_scoreboard(self):
